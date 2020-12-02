@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		61C4FFC32577DA9300639386 /* Core_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C4FFC12577DA9300639386 /* Core_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFCB2577DF6800639386 /* CoreIOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61C4FFBE2577DA9300639386 /* Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C4FFC12577DA9300639386 /* Core_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core_iOS.h; sourceTree = "<group>"; };
 		61C4FFC22577DA9300639386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C4FFCB2577DF6800639386 /* CoreIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreIOS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				61C4FFC12577DA9300639386 /* Core_iOS.h */,
 				61C4FFC22577DA9300639386 /* Info.plist */,
+				61C4FFCB2577DF6800639386 /* CoreIOS.swift */,
 			);
 			path = "Core-iOS";
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					61C4FFBD2577DA9300639386 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		61C4FFC72577DA9300639386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B9H63QRDPT;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eindesein.Core-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		61C4FFC82577DA9300639386 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B9H63QRDPT;
