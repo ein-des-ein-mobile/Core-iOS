@@ -12,6 +12,7 @@
 		61C4FFEA2577F35800639386 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFE92577F35800639386 /* KeychainManager.swift */; };
 		61C4FFED2577F36200639386 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFEC2577F36200639386 /* DataManager.swift */; };
 		61C4FFF02577F38C00639386 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFEF2577F38C00639386 /* Token.swift */; };
+		61C4FFFB2577F59000639386 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFF92577F59000639386 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		61C4FFE92577F35800639386 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		61C4FFEC2577F36200639386 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		61C4FFEF2577F38C00639386 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		61C4FFF92577F59000639386 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		61C4FFC02577DA9300639386 /* Core-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				61C4FFF62577F56500639386 /* Core */,
 				61C4FFE82577F2DF00639386 /* Managers */,
 				61C4FFE72577F2A400639386 /* APILayer */,
 				61C4FFC12577DA9300639386 /* Core_iOS.h */,
@@ -78,6 +81,22 @@
 				61C4FFE92577F35800639386 /* KeychainManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		61C4FFF62577F56500639386 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				61C4FFF72577F59000639386 /* Coordinator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		61C4FFF72577F59000639386 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				61C4FFF92577F59000639386 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +180,7 @@
 			files = (
 				61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */,
 				61C4FFED2577F36200639386 /* DataManager.swift in Sources */,
+				61C4FFFB2577F59000639386 /* Coordinator.swift in Sources */,
 				61C4FFEA2577F35800639386 /* KeychainManager.swift in Sources */,
 				61C4FFF02577F38C00639386 /* Token.swift in Sources */,
 			);

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EinDesEin-CoreIOS"
-  spec.version      = "0.11"
+  spec.version      = "0.12"
   spec.summary      = "A CocoaPods library representing EinDesEin Core"
 
   spec.description  = <<-DESC
@@ -20,6 +20,10 @@ This CocoaPods library helps you perform calculation.
 
   spec.subspec "API" do |ss|
     ss.dependency "Moya"
+  end
+
+  spec.subspec "Events" do |ss|
+    ss.dependency "EventsTree"
   end
 
 end
