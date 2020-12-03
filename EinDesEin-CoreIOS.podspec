@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EinDesEin-CoreIOS"
-  spec.version      = "0.14"
+  spec.version      = "0.15"
   spec.summary      = "A CocoaPods library representing EinDesEin Core"
 
   spec.description  = <<-DESC
