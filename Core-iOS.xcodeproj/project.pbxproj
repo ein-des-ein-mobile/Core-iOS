@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61C4005D25791A8300639386 /* TabBarEmbedCoordinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4005A25791A8300639386 /* TabBarEmbedCoordinable.swift */; };
+		61C4005E25791A8300639386 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4005B25791A8300639386 /* Model.swift */; };
+		61C4005F25791A8300639386 /* ModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4005C25791A8300639386 /* ModelOutput.swift */; };
 		61C4FFC32577DA9300639386 /* Core_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C4FFC12577DA9300639386 /* Core_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFCB2577DF6800639386 /* CoreIOS.swift */; };
 		61C4FFEA2577F35800639386 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFE92577F35800639386 /* KeychainManager.swift */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		33B0EF9B4DCF5700955FF026 /* Pods_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6FCF50E5914467BCED443C /* Pods-Core-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Core-iOS/Pods-Core-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		61C4005A25791A8300639386 /* TabBarEmbedCoordinable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedCoordinable.swift; sourceTree = "<group>"; };
+		61C4005B25791A8300639386 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		61C4005C25791A8300639386 /* ModelOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelOutput.swift; sourceTree = "<group>"; };
 		61C4FFBE2577DA9300639386 /* Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C4FFC12577DA9300639386 /* Core_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core_iOS.h; sourceTree = "<group>"; };
 		61C4FFC22577DA9300639386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +54,17 @@
 				5C6FCF50E5914467BCED443C /* Pods-Core-iOS.debug.xcconfig */,
 				F0B0A77A56E56E4AB5ABD06A /* Pods-Core-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		61C4005925791A8300639386 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				61C4005A25791A8300639386 /* TabBarEmbedCoordinable.swift */,
+				61C4005B25791A8300639386 /* Model.swift */,
+				61C4005C25791A8300639386 /* ModelOutput.swift */,
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 		61C4FFB42577DA9300639386 = {
@@ -103,6 +118,7 @@
 		61C4FFF62577F56500639386 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				61C4005925791A8300639386 /* Templates */,
 				61C4FFF72577F59000639386 /* Coordinator */,
 			);
 			path = Core;
@@ -229,10 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C4005E25791A8300639386 /* Model.swift in Sources */,
 				61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */,
 				61C4FFED2577F36200639386 /* DataManager.swift in Sources */,
 				61C4FFFB2577F59000639386 /* Coordinator.swift in Sources */,
 				61C4FFEA2577F35800639386 /* KeychainManager.swift in Sources */,
+				61C4005D25791A8300639386 /* TabBarEmbedCoordinable.swift in Sources */,
+				61C4005F25791A8300639386 /* ModelOutput.swift in Sources */,
 				61C4FFF02577F38C00639386 /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
