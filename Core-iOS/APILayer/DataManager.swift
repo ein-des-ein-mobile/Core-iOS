@@ -19,7 +19,7 @@ protocol ParseKeyPath {
     static var parseKeyPathExtension: String { get }
 }
 
-class DataManager<T, U> where T: TargetType, U: Decodable {
+public final class DataManager<T, U> where T: TargetType, U: Decodable {
 
     public let provider = MoyaProvider<T>(plugins: DataManager.plugins)
     public internal(set) var  data: U?
