@@ -18,6 +18,8 @@
 		61C4FFFB2577F59000639386 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4FFF92577F59000639386 /* Coordinator.swift */; };
 		61CC4D61257A7100007574F1 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC4D60257A7100007574F1 /* TemplateViewController.swift */; };
 		61CC4D64257A710F007574F1 /* TemplateControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC4D63257A710F007574F1 /* TemplateControllerModel.swift */; };
+		61CC4DB7257A8F21007574F1 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC4DB5257A8F21007574F1 /* ValidationRule.swift */; };
+		61CC4DB8257A8F21007574F1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC4DB6257A8F21007574F1 /* Validator.swift */; };
 		71E26998395D9F3E30A1CD57 /* Pods_Core_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B0EF9B4DCF5700955FF026 /* Pods_Core_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		61C4FFF92577F59000639386 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		61CC4D60257A7100007574F1 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		61CC4D63257A710F007574F1 /* TemplateControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateControllerModel.swift; sourceTree = "<group>"; };
+		61CC4DB5257A8F21007574F1 /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		61CC4DB6257A8F21007574F1 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		F0B0A77A56E56E4AB5ABD06A /* Pods-Core-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core-iOS.release.xcconfig"; path = "Target Support Files/Pods-Core-iOS/Pods-Core-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,7 @@
 		61C4FFF62577F56500639386 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				61CC4DB4257A8BCB007574F1 /* Validators */,
 				61C4005925791A8300639386 /* Templates */,
 				61C4FFF72577F59000639386 /* Coordinator */,
 			);
@@ -144,6 +149,15 @@
 				61CC4D63257A710F007574F1 /* TemplateControllerModel.swift */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		61CC4DB4257A8BCB007574F1 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				61CC4DB5257A8F21007574F1 /* ValidationRule.swift */,
+				61CC4DB6257A8F21007574F1 /* Validator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		E4EB536B3BDF22F4802CF499 /* Frameworks */ = {
@@ -263,11 +277,13 @@
 				61CC4D64257A710F007574F1 /* TemplateControllerModel.swift in Sources */,
 				61C4FFCC2577DF6800639386 /* CoreIOS.swift in Sources */,
 				61C4FFED2577F36200639386 /* DataManager.swift in Sources */,
+				61CC4DB8257A8F21007574F1 /* Validator.swift in Sources */,
 				61C4FFFB2577F59000639386 /* Coordinator.swift in Sources */,
 				61C4FFEA2577F35800639386 /* KeychainManager.swift in Sources */,
 				61C4005D25791A8300639386 /* TabBarEmbedCoordinable.swift in Sources */,
 				61C4005F25791A8300639386 /* ModelOutput.swift in Sources */,
 				61C4FFF02577F38C00639386 /* Token.swift in Sources */,
+				61CC4DB7257A8F21007574F1 /* ValidationRule.swift in Sources */,
 				61CC4D61257A7100007574F1 /* TemplateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
