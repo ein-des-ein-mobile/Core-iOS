@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ValidationRule {
+public protocol ValidationRule {
 
   var errorMessage: String { get }
   func validate(_ value: String) -> Bool
@@ -41,9 +41,9 @@ class RequiredRule: ValidationRule {
 
 }
 
-class RegexRule: ValidationRule {
+public class RegexRule: ValidationRule {
 
-  let errorMessage: String
+public let errorMessage: String
   private let regex: String
 
   init(regex: String, errorMessage: String) {
@@ -51,7 +51,7 @@ class RegexRule: ValidationRule {
     self.regex = regex
   }
 
-  func validate(_ value: String) -> Bool {
+public func validate(_ value: String) -> Bool {
     let predicate = NSPredicate(format: "self matches %@", regex)
     return predicate.evaluate(with: value)
   }
@@ -88,12 +88,12 @@ class PhoneRule: ValidationRule {
 
 }
 
-class EmailRegexRule: RegexRule {
+public class EmailRegexRule: RegexRule {
 
 //  /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
   private static let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
-  convenience init(errorMessage: String) {
+  public convenience init(errorMessage: String) {
     self.init(regex: EmailRegexRule.emailRegEx, errorMessage: errorMessage)
   }
 
